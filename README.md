@@ -5,7 +5,7 @@ Off Topic - сетевое сообщение, выходящее за рамк�
 ## Синтаксис
 
 ```
-[OFF]Ticidunt quisque tristique. This is underlined text.[/OFF]
+[OFF]Lid est laborum et dolorum fuga.[/OFF]
 ```
 
 ## Установка
