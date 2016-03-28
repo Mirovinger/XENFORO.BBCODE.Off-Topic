@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="csiXF_bbCode_EB2355B7" title="(CSI/XF/BBCODE) Off Topic" version_string="1.0.1" version_id="2" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="custom_bb_code_off_title" version_id="1" version_string="1.0.0"><![CDATA[Off Topic]]></phrase>
+    <phrase title="custom_bb_code_off_desc" version_id="1" version_string="1.0.0"><![CDATA[Off Topic - сетевое сообщение, выходящее за рамки заранее установленной темы общения. Например, запись на веб-форуме, не соответствующая либо общему направлению форума, либо той теме, в рамках которой запись оставлена. Очень трудно удержать дискуссию в правильном направлении. Часто оппоненты отвлекаются и ведут беседы не по заданной теме. Специально для таких случаев был создан отдельный тег, который позволяет в разговоре немного отклониться от темы, но практически не засоряя информационный поток. Этот тег выделяет участок текста, чтобы он меньше бросался в глаза, тем самым показывая, что данный текст не относится к заданной теме.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates>
+    <template title="csiXF_bbCode_EB2355B7_tag_off" version_id="2" version_string="1.0.1"><![CDATA[<xen:require css="csiXF_bbCode_EB2355B7.css" />
+<span class="csiXF_bbCode_EB2355B7 bbCodeOffTopic">{xen:raw $content}</span>]]></template>
+    <template title="csiXF_bbCode_EB2355B7.css" version_id="1" version_string="1.0.0"><![CDATA[.bbCodeOffTopic {
+  font-size: 8pt;
+  opacity: .6;
+}]]></template>
+  </templates>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes>
+    <bb_code bb_code_id="off" bb_code_mode="callback" has_option="no" callback_class="CSI\BbCodeOffTopic\BbCode\Formatter\Base" callback_method="getBbCodeOffTopic" option_regex="" trim_lines_after="0" plain_children="0" disable_smilies="0" disable_nl2br="0" disable_autolink="0" allow_empty="0" allow_signature="0" editor_icon_url="" sprite_mode="0" sprite_params_x="" sprite_params_y="" active="1">
+      <replace_html><![CDATA[]]></replace_html>
+      <replace_html_email><![CDATA[]]></replace_html_email>
+      <replace_text><![CDATA[]]></replace_text>
+      <example><![CDATA[[OFF]Ticidunt quisque tristique. This is underlined text. Sollicitudin eros sapien, ultrices primis. This is Emphasized text volutpat tempor tur duis mattis dapibus, felis amet faucibus. fames etiam sit enim fermentum etiam quam eros velit aptent netus faucibus duis lectus integer malesuada, mattis tempus commodoiam molestie taciti eleifend donec fames platea molestie donec, bibendum vehicula nam turpis faucibus, Tncidunt quisque tristique. This is underlined text. Sollicitudin eros sapien, ultrices primis. This is Emphasized text volutpat tempor tur duis mattis dapibus, felis amet faucibus. fames etiam sit enim fermentum etiam quam eros velit aptent netus faucibus duis lectus integer malesuada, mattis tempus commodoiam molestie taciti eleifend donec fames platea molestie donec, bibendum vehicula nam turpis faucibus.[/OFF]]]></example>
+    </bb_code>
+  </bb_codes>
+</addon>
